@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+
+}
+
+.box {
+    position: relative;
+    border-radius: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aqua;
+    height: 100vh;
+    width: 60%;
+    text-align: center;
+    padding: 0px;
+    border: 2px solid black;
+
+}
+
+.box1 {
+    position: absolute;
+    margin-bottom: 0px;
+    background: url('wave.png') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    z-index: 998;
+    opacity: .15;
+    animation: akash 10s infinite;
+    bottom: 0px;
+}
+
+.box2 {
+
+    position: absolute;
+    margin-bottom: 0px;
+    background: url('wave.png') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    z-index: 997;
+    opacity: .12;
+    animation-delay: -4ms;
+    animation: akash1 10s infinite;
+    bottom: 0px;
+}
+
+.box3 {
+    position: absolute;
+    margin-bottom: 0px;
+    background: url('wave.png') no-repeat center center/cover;
+    height: 500px;
+    width: 100%;
+    z-index: 996;
+    opacity: .2;
+    animation-delay: -6ms;
+    animation: akash2 10s infinite;
+    bottom: 0px;
+}
+
+@keyframes akash2 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+}
+
+@keyframes akash1 {
+    0% {
+        background-position-x: 0%;
+    }
+
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+}
+
+@keyframes akash {
+    0% {
+        background-position-x: 0%;
+    }
+
+    50% {
+        background-position-x: 100%;
+    }
+
+    100% {
+        background-position-x: 0%;
+    }
+}
+
+#Wheather {
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#location {
+    font-weight: 500;
+}
+
+.fa-solid {
+    color: yellow;
+}
+
+.fa-street-view {
+    padding: 10px;
+    color: black;
+}
+
+#currdate {
+    padding: 10px;
+    font-size: 2rem;
+}
+
+#temp {
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+#minmax {
+    padding: 10px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
