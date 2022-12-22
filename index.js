@@ -3,7 +3,7 @@ const fs = require('fs');
 const requests = require('request');
 const port = 3000;
 const hostname = '127.0.0.1';
-const ak = fs.readFileSync("./index.html", 'utf-8');
+const ak = fs.readFileSync("index.html", 'utf-8');
 
 const replaceval = (tempval, orgval) => {
   let temp = tempval.replace("{%tempval%}", ((orgval.main.temp) / 10).toFixed(2));
